@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>  
+</head>
+<link rel = "stylesheet" href = "./css/main.css"/>
+
+<body>
+    <div class="total-bg-container">
+        <h1 class="Weather-Report">Weather Report</h1>
+        <div class="inputbox">
+            <input type="search" class="search" placeholder="Search City Wheater" id="searchValue" />
+            <button class="button" onclick="button()">Search</button>
+        </div>
+        
+        <h1 id="notFoundLocation" style = "display : none;" class="location-not">Location Not Found</h1>
+        <div id="weatherContainer" style = "display : none;">
+            
+            <div class="d-flex flex-row rain-total-set">
+                <img src="./img/rainy.png" class="rainImage" id = "climateConditionImages"/>
+                <div class="text-adjustment">
+                    <h1 class="Heavy-Rain">Climate Condition</h1>
+                    <p class="Heavy-Rain-degree" id="displayClimate">Hot</p>
+                    <!--<p class="Heavy-Rain-degree">Humidity : 35%</p>-->
+                </div>
+            </div>
+
+            <br />
+
+            <div class="d-flex flex-row rain-total-set">
+                <img src="./img/temparature.jpg" class="rainImage" />
+                <div class="text-adjustment">
+                    <h1 class="Heavy-Rain">Temparature</h1>
+                    <p class="Heavy-Rain-degree" id="displayTemparature">35℃</p>
+                    <!--<p class="Heavy-Rain-degree">Humidity : 31%</p>-->
+                </div>
+            </div>
+
+            <div class="d-flex flex-row rain-total-set">
+                <img src="./img/humidity.webp" class="rainImage" />
+                <div class="text-adjustment">
+                    <h1 class="Heavy-Rain">Humidity</h1>
+                    <p class="Heavy-Rain-degree" id="displayHumidity">30%</p>
+                    <!--<p class="Heavy-Rain-degree">Humidity : 40%</p>-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src = "./js/script.js"></script>
+</html>
